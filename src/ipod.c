@@ -155,26 +155,27 @@ void send_image(int number)
 		int i,lenght;
 		char buf_apload_pic[255];
 		
-		memset(buf_apload_pic, 0,buf_apload_pic[0] ); 
+		memset(buf_apload_pic, 0,buf_apload_pic[0] ); //clear bufer
 		
-  	buf_apload_pic[0]=(WIDHT_PICT/4)*3+15;
-		buf_apload_pic[1]=M4_TX_UPLOAD_PIC[1];
+		
+  	buf_apload_pic[0]=(WIDHT_PICT/4)*3+15;  //lenght all bufer
+		buf_apload_pic[1]=M4_TX_UPLOAD_PIC[1];  
 		buf_apload_pic[2]=M4_TX_UPLOAD_PIC[2];
 		buf_apload_pic[3]=M4_TX_UPLOAD_PIC[3];
-		buf_apload_pic[5]=0x00;
-		buf_apload_pic[6]=COLOR;
-		buf_apload_pic[8]=WIDHT;
+		buf_apload_pic[5]=0x00;               //number line
+		buf_apload_pic[6]=COLOR;							//color 0x01
+		buf_apload_pic[8]=WIDHT;							
 		buf_apload_pic[10]=HEIGHT;
-		buf_apload_pic[14]=(WIDHT_PICT/4);
+		buf_apload_pic[14]=(WIDHT_PICT/4);		//widht  multiple 8
 		
-		filling_line(buf_apload_pic,number,0);
+		filling_line(buf_apload_pic,number,0);	//full bufer pixel information 
 		
 //		UPLOAD_PIC();
-	sendmsg(buf_apload_pic);
+	sendmsg(buf_apload_pic);		//sen command on ipod
 		
 		for(i=1;i<=(HEIGHT/3-1);i++)
 		{
-			delay(5000000); 	
+			delay(3000000); 	
 			memset(buf_apload_pic, 0,buf_apload_pic[0] ); 
 			buf_apload_pic[0]=(WIDHT_PICT/4)*3+6;
 			buf_apload_pic[1]=M4_TX_UPLOAD_PIC[1];

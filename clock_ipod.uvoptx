@@ -179,6 +179,22 @@
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
+        <Bp>
+          <Number>2</Number>
+          <Type>0</Type>
+          <LineNumber>113</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>C:\Users\andrey.FLEXLAB\Documents\GitHub\IPOD\DEVICE\STM32F400\stm32f4xx_it.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
       </Breakpoint>
       <Tracepoint>
         <THDelay>0</THDelay>
@@ -383,6 +399,22 @@
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
+        <Bp>
+          <Number>2</Number>
+          <Type>0</Type>
+          <LineNumber>113</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>C:\Users\andrey.FLEXLAB\Documents\GitHub\IPOD\DEVICE\STM32F400\stm32f4xx_it.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
       </Breakpoint>
       <Tracepoint>
         <THDelay>0</THDelay>
@@ -557,23 +589,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>C:\ANDREY_KAZAKOV\IPOD\IPOD_MK\ipod_control\DEVICE\STM32F400\stm32f4xx_it.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>115</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>C:\ANDREY_KAZAKOV\IPOD\IPOD_MK\ipod_control\src\main.c</Filename>
+          <Filename>C:\Users\andrey.FLEXLAB\Documents\GitHub\IPOD\DEVICE\STM32F400\stm32f4xx_it.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -594,6 +610,11 @@
           <WinNumber>1</WinNumber>
           <ItemText>uart_rx_buf_ipod</ItemText>
         </Ww>
+        <Ww>
+          <count>3</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>buf_apload_pic</ItemText>
+        </Ww>
       </WatchWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
@@ -601,7 +622,7 @@
       <DebugFlag>
         <trace>0</trace>
         <periodic>0</periodic>
-        <aLwin>1</aLwin>
+        <aLwin>0</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
@@ -647,10 +668,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>18</ColumnNumber>
+      <ColumnNumber>29</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>100</TopLine>
-      <CurrentLine>110</CurrentLine>
+      <TopLine>83</TopLine>
+      <CurrentLine>131</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -663,9 +684,9 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>61</ColumnNumber>
+      <ColumnNumber>64</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>88</TopLine>
+      <TopLine>91</TopLine>
       <CurrentLine>93</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\lcd-hd44780.c</PathWithFileName>
@@ -677,12 +698,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>136</TopLine>
-      <CurrentLine>172</CurrentLine>
+      <TopLine>101</TopLine>
+      <CurrentLine>191</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\ipod.c</PathWithFileName>
       <FilenameWithoutPath>ipod.c</FilenameWithoutPath>
@@ -697,7 +718,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>137</TopLine>
+      <TopLine>140</TopLine>
       <CurrentLine>149</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\misc.c</PathWithFileName>
@@ -745,7 +766,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>104</TopLine>
+      <TopLine>98</TopLine>
       <CurrentLine>113</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\DEVICE\STM32F400\stm32f4xx_it.c</PathWithFileName>
@@ -977,7 +998,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>383</TopLine>
+      <TopLine>386</TopLine>
       <CurrentLine>387</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.c</PathWithFileName>
@@ -1529,7 +1550,7 @@
       <Focus>0</Focus>
       <ColumnNumber>23</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>21</TopLine>
+      <TopLine>22</TopLine>
       <CurrentLine>23</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</PathWithFileName>
@@ -2017,7 +2038,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1265</TopLine>
+      <TopLine>1268</TopLine>
       <CurrentLine>1274</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</PathWithFileName>
@@ -2065,7 +2086,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>137</TopLine>
+      <TopLine>140</TopLine>
       <CurrentLine>141</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>RTE\Device\STM32L152RB\startup_stm32l1xx_md.s</PathWithFileName>
@@ -2081,7 +2102,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>383</TopLine>
+      <TopLine>384</TopLine>
       <CurrentLine>385</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>RTE\Device\STM32L152RB\system_stm32l1xx.c</PathWithFileName>
@@ -2161,7 +2182,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>174</TopLine>
+      <TopLine>171</TopLine>
       <CurrentLine>182</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>RTE\Device\STM32F407VG\startup_stm32f40xx.s</PathWithFileName>

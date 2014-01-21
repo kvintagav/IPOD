@@ -479,11 +479,11 @@ ARM Macro Assembler    Page 8
               00000000 
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\output
-\startup_stm32l1xx_md.d -o.\output\startup_stm32l1xx_md.o -IC:\ANDREY_KAZAKOV\I
-POD\IPOD_MK\ipod_control\RTE -IC:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include 
--IC:\Keil\ARM\PACK\Keil\STM32L1xx_DFP\1.0.0\Device\Include --predefine="__MICRO
-LIB SETA 1" --list=.\startup_stm32l1xx_md.lst RTE\Device\STM32L152RB\startup_st
-m32l1xx_md.s
+\startup_stm32l1xx_md.d -o.\output\startup_stm32l1xx_md.o -IC:\Users\andrey.FLE
+XLAB\Documents\GitHub\IPOD\RTE -IC:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Includ
+e -IC:\Keil\ARM\PACK\Keil\STM32L1xx_DFP\1.0.0\Device\Include --predefine="__MIC
+ROLIB SETA 1" --list=.\startup_stm32l1xx_md.lst RTE\Device\STM32L152RB\startup_
+stm32l1xx_md.s
 
 
 

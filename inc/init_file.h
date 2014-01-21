@@ -17,6 +17,16 @@
 #define LED1_DS GPIO_ResetBits(LD_GPIO_PORT, LD_GREEN_GPIO_PIN);
 #define LED2_DS  GPIO_ResetBits(LD_GPIO_PORT, LD_BLUE_GPIO_PIN);
  
+#define USB1_EN  GPIO_SetBits(GPIO_USB, PIN_USB1);
+#define USB2_EN  GPIO_SetBits(GPIO_USB, PIN_USB2);
+#define USB1_DS  GPIO_ResetBits(GPIO_USB, PIN_USB1);
+#define USB2_DS  GPIO_ResetBits(GPIO_USB, PIN_USB2);
+
+#define RELE1_EN GPIO_SetBits(GPIO_RELE, PIN_RELE1);
+#define RELE2_EN  GPIO_SetBits(GPIO_RELE, PIN_RELE2);
+#define RELE1_DS GPIO_ResetBits(GPIO_RELE, PIN_RELE1);
+#define RELE2_DS  GPIO_ResetBits(GPIO_RELE, PIN_RELE2);
+
 
 #ifdef USE_STM32L152
  #include "stm32l1xx.h"

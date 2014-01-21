@@ -50,7 +50,10 @@ bool ipod_work;    // ipod  on or off
 bool play_stop;
 bool simple_mode; 
 bool ipod_detect;
-
+bool usb1;
+bool usb2;
+bool rele1;
+bool rele2;
 int main(void)
 {
 
@@ -69,24 +72,22 @@ int main(void)
   init_rele();
   init_usb();
   init_ipod_detect();
-
-
+	
+	lcd44780_SetLCDPosition(0,0);
+	lcd44780_ShowStr("IPOD MODE");
 #else  //work accomodometer
    init_uart_ipod();
    init_uart_host();
-	// init_leds();
-	// SWITCH_2();
+
 	SWITCH_4();
-#endif 
-	
-//	rtc_init();
-//	rtc_settime (&RTC_R);				/* Set time */
+
 	
 	send_str(UART_EXT,"\r\nIPOD-control ver1.0\r");
 	send_str(UART_EXT,"\nCPU: STM32L152RC CORTEX M3\r ");
 	send_str(UART_EXT,"\nipod> ");
-	
-//	LED1_EN;
+
+#endif 
+
 	
 	while(1)
 	{
@@ -96,19 +97,25 @@ int main(void)
 		{
 			SWITCH_2();
 			ipod_detect=1;
+			lcd44780_SetLCDPosition(1,0);
+			lcd44780_ShowStr("IPOD ENABLE");
+			
 		}
 		else if ((ipod_detect==1)&&  (GPIO_ReadInputDataBit(GPIO_ipod_detect, GPIO_Pin_ipod_detect)==0))
 		{
 			ipod_detect=0;
+			lcd44780_SetLCDPosition(1,0);
+			lcd44780_ShowStr("IPOD DISABLE");
+			
 		}
 	#else
-//CHANGE_MODE();
+
 	delay(1000000);  
-//	SWITCH_4();
+
 	delay(1000000);  
-//GET_MODE() ;
+
 	GET_MAX_SCREEN();
-//delay(10000000); 
+
 		
  
   delay(10000000); 
@@ -152,7 +159,8 @@ void dy_command(uint8_t BYTE)
 			break;
 			case DY_MODE :
 				 mode=MODE_CLK;
-
+					lcd44780_SetLCDPosition(0,0);
+				lcd44780_ShowStr("MODE SETTINGS");
 			break;
 			case DY_CLOCK :
 				 SCROLL_CCW();
@@ -233,8 +241,61 @@ void dy_command(uint8_t BYTE)
 		switch(BYTE)
 		{
 			case DY_MODE :
-				 mode=MODE_IPOD;
-
+				mode=MODE_IPOD;
+				lcd44780_SetLCDPosition(0,0);
+				lcd44780_ShowStr("MODE IPOD");
+			break;
+			case DY_BACK :
+				if (usb1==1)
+				{
+					USB1_EN;
+					usb1=0;
+				}	
+				else
+				{
+					USB1_DS;
+					usb1=1;
+				}			
+			USB1_DS   USB2_DS
+			break;
+			case DY_NEXT :
+				if (usb2==1)
+				{
+					USB2_EN;
+					usb2=0;
+				}	
+				else
+				{
+					USB2_DS;
+					usb2=1;
+				}
+			break;
+			case DY_DOWN :
+				if (rele1==1)
+				{
+					RELE1_EN;
+					rele1=0;
+				}	
+				else
+				{
+					RELE1_DS;
+					rele1=1;
+				
+				}
+			break;
+			case DY_UP :
+				if (rele2==1)
+				{
+					RELE2_EN;
+					rele2=0;
+				}	
+				else
+				{
+					RELE2_DS;
+					rele2=1;
+				}
+			break;
+			default:
 			break;
 		}
 	}	

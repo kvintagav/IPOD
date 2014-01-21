@@ -34,10 +34,10 @@
 #define MODE_INDEX 3
 #define COMMAND_INDEX 4
 
-#define WIDHT  120
-#define WIDHT_PICT  128
+#define WIDHT  176	
+#define WIDHT_PICT  192
 
-#define HEIGHT 64
+#define HEIGHT  132
 
 #define COLOR 0x01
 

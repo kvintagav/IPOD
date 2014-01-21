@@ -79,10 +79,6 @@
 #define PIN_RELE1 GPIO_Pin_8
 #define PIN_RELE2 GPIO_Pin_11
 
-#define RELE1_EN GPIO_SetBits(GPIO_RELE, PIN_RELE1);
-#define RELE2_EN  GPIO_SetBits(GPIO_RELE, PIN_RELE2);
-#define RELE1_DS GPIO_ResetBits(GPIO_RELE, PIN_RELE1);
-#define RELE2_DS  GPIO_ResetBits(GPIO_RELE, PIN_RELE2);
 
 	
 /*USB*/
@@ -91,10 +87,7 @@
 #define PIN_USB1 GPIO_Pin_15
 #define PIN_USB2 GPIO_Pin_12
 
-#define USB1_EN  GPIO_SetBits(GPIO_USB, PIN_USB1);
-#define USB2_EN  GPIO_SetBits(GPIO_USB, PIN_USB2);
-#define USB1_DS  GPIO_ResetBits(GPIO_USB, PIN_USB1);
-#define USB2_DS  GPIO_ResetBits(GPIO_USB, PIN_USB2);
+
 
 /*IPOD DETECT*/
 #define GPIO_ipod_RCC RCC_AHBPeriph_GPIOB
